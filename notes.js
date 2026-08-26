@@ -75,6 +75,18 @@ generateBtn.addEventListener("click", async () => {
     try {
         // 1. Get the language value FIRST
         const language = document.getElementById("language").value;
+       const notesContainer =
+    document.getElementById("notesContainer");
+
+if (language === "Urdu") {
+
+    notesContainer.classList.add("urdu-notes");
+
+} else {
+
+    notesContainer.classList.remove("urdu-notes");
+
+}
 
         // 2. Make the fetch call
         const response = await fetch(
