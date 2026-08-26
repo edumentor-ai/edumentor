@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00C6FF"/>
+      <stop offset="100%" stop-color="#7B2FF7"/>
+    </linearGradient>
+
+    <linearGradient id="book" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+
+  <!-- White Circle -->
+  <circle cx="256" cy="256" r="180" fill="#0b1b5e" stroke="white" stroke-width="12"/>
+
+  <!-- Graduation Cap -->
+  <path d="M150 155 L256 105 L362 155 L256 205 Z"
+        fill="#1d4ed8"/>
+  <path d="M335 155 V215"
+        stroke="#facc15"
+        stroke-width="8"/>
+  <circle cx="335" cy="220" r="10" fill="#facc15"/>
+
+  <!-- Robot Head -->
+  <rect x="180" y="180" width="152" height="120"
+        rx="40"
+        fill="white"/>
+
+  <!-- Face -->
+  <rect x="200" y="200" width="112" height="80"
+        rx="25"
+        fill="#0b1b5e"/>
+
+  <!-- Eyes -->
+  <path d="M220 235 Q230 220 240 235"
+        stroke="#00e5ff"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <path d="M272 235 Q282 220 292 235"
+        stroke="#00e5ff"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M235 255 Q256 270 277 255"
+        stroke="#00e5ff"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <!-- AI Badge -->
+  <rect x="215" y="295" width="82" height="55"
+        rx="18"
+        fill="#2563eb"/>
+
+  <text x="256"
+        y="332"
+        text-anchor="middle"
+        font-size="28"
+        font-family="Arial"
+        font-weight="bold"
+        fill="white">
+    AI
+  </text>
+
+  <!-- Book -->
+  <path d="M145 360 Q200 340 256 365
+           Q312 340 367 360
+           L367 405
+           Q312 385 256 410
+           Q200 385 145 405 Z"
+        fill="url(#book)"
+        stroke="#2563eb"
+        stroke-width="4"/>
+
+</svg>

@@ -1,0 +1,961 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#1E293B;
+
+    min-height:100vh;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    width:100%;
+
+    min-height:72px;
+
+    padding:0 7%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #E2E8F0;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    color:#2563EB;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+.logo i{
+
+    margin-right:6px;
+
+}
+
+.logo span{
+
+    color:#0F172A;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+
+.nav-links a{
+
+    position:relative;
+
+    color:#475569;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    padding:27px 0;
+
+}
+
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:18px;
+
+    width:0;
+
+    height:3px;
+
+    background:#2563EB;
+
+    border-radius:10px;
+
+    transition:.3s ease;
+
+}
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+
+.nav-links a.active{
+
+    color:#2563EB;
+
+}
+
+
+.theme-toggle{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s ease;
+
+}
+
+
+.theme-toggle:hover{
+
+    transform:rotate(15deg);
+
+}
+
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header{
+
+    padding:80px 7% 65px;
+
+    background:linear-gradient(
+        135deg,
+        #EFF6FF,
+        #F8FAFC
+    );
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+
+.small-title{
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+
+.small-title i{
+
+    margin-right:6px;
+
+}
+
+
+.page-header h1{
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    margin-bottom:15px;
+
+}
+
+
+.page-header > div > p:last-child{
+
+    color:#64748B;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================================
+   DASHBOARD CONTAINER
+========================================== */
+
+.dashboard-container{
+
+    width:86%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+}
+
+
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.stat-card{
+
+    background:#ffffff;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,.05);
+
+    transition:.3s ease;
+
+}
+
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.12);
+
+}
+
+
+.stat-icon{
+
+    width:55px;
+
+    height:55px;
+
+    min-width:55px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:22px;
+
+}
+
+
+.stat-card p{
+
+    color:#64748B;
+
+    font-size:14px;
+
+    margin-bottom:4px;
+
+}
+
+
+.stat-card h2{
+
+    color:#0F172A;
+
+    font-size:28px;
+
+}
+
+
+
+/* ==========================================
+   DASHBOARD SECTION
+========================================== */
+
+.dashboard-section{
+
+    margin-top:45px;
+
+}
+
+
+.section-label{
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+
+.section-heading h2{
+
+    font-size:27px;
+
+    margin-top:4px;
+
+}
+
+
+
+/* ==========================================
+   RESULTS CONTAINER
+========================================== */
+
+.results-container{
+
+    margin-top:22px;
+
+}
+
+
+.empty-state{
+
+    background:#ffffff;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    padding:55px 25px;
+
+    text-align:center;
+
+}
+
+
+.empty-state > i{
+
+    font-size:45px;
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+
+.empty-state h3{
+
+    font-size:21px;
+
+    margin-bottom:8px;
+
+}
+
+
+.empty-state p{
+
+    color:#64748B;
+
+    margin-bottom:25px;
+
+}
+
+
+.dashboard-btn{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+
+.dashboard-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:#1E293B;
+
+    color:#ffffff;
+
+}
+
+
+footer h3{
+
+    font-size:25px;
+
+    margin-bottom:10px;
+
+}
+
+
+footer p{
+
+    color:#CBD5E1;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark{
+
+    background:#0F172A;
+
+    color:#F8FAFC;
+
+}
+
+
+body.dark .navbar{
+
+    background:#020617;
+
+    border-color:#1E293B;
+
+}
+
+
+body.dark .logo span{
+
+    color:#F8FAFC;
+
+}
+
+
+body.dark .nav-links a{
+
+    color:#CBD5E1;
+
+}
+
+
+body.dark .nav-links a.active{
+
+    color:#60A5FA;
+
+}
+
+
+body.dark .theme-toggle{
+
+    background:#1E293B;
+
+    color:#60A5FA;
+
+}
+
+
+body.dark .page-header{
+
+    background:#111827;
+
+    border-color:#1E293B;
+
+}
+
+
+body.dark .page-header > div > p:last-child{
+
+    color:#94A3B8;
+
+}
+
+
+body.dark .stat-card{
+
+    background:#1E293B;
+
+    border-color:#334155;
+
+}
+
+
+body.dark .stat-card h2{
+
+    color:#F8FAFC;
+
+}
+
+
+body.dark .stat-card p{
+
+    color:#94A3B8;
+
+}
+
+
+body.dark .stat-icon{
+
+    background:#172554;
+
+    color:#60A5FA;
+
+}
+
+
+body.dark .empty-state{
+
+    background:#1E293B;
+
+    border-color:#334155;
+
+}
+
+
+body.dark .empty-state p{
+
+    color:#94A3B8;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1050px){
+
+    .stats-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================
+   NAVBAR & HAMBURGER MENU STYLES
+========================================== */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2563EB;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #1E293B;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2563EB;
+}
+
+/* Dark Mode Theme Button */
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #EFF6FF;
+    color: #2563EB;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #2563EB;
+    color: #ffffff;
+    transform: rotate(20deg);
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #2563EB;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+body.dark .hamburger-btn {
+    color: #60A5FA;
+}
+
+/* Dark Mode Navbar Overrides */
+body.dark header {
+    background: #1E293B;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .logo {
+    color: #60A5FA;
+}
+
+body.dark .nav-links a {
+    color: #F8FAFC;
+}
+
+body.dark .nav-links a:hover,
+body.dark .nav-links a.active {
+    color: #60A5FA;
+}
+
+body.dark .theme-toggle {
+    background: #334155;
+    color: #FFD43B;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE HAMBURGER MENU
+========================================== */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger-btn {
+        display: block;
+    }
+
+    /* Dropdown Overlay Menu */
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    body.dark .nav-links {
+        background: #1E293B;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    /* Hide the underline line on mobile dropdown menu */
+    .nav-links a::after {
+        display: none !important;
+    }
+
+    /* Optional: Style active link with a subtle background instead */
+    .nav-links a.active {
+        color: #2563EB;
+        font-weight: 600;
+    }
+}
+/* 1. Ensure 'a' has position: relative and display inline/flex */
+.nav-links a {
+    position: relative; /* CRITICAL: Anchors the pseudo-element to the link */
+    display: inline-block;
+    color: #1E293B;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+}
+
+.nav-links a:hover {
+    color: #2563EB;
+}
+
+/* 2. Position the underline at the VERY BOTTOM */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Align directly to the bottom edge of 'a' */
+    width: 0;
+    height: 3px;
+    border-radius: 50px;
+    background: #2563EB;
+    transition: width 0.35s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+@media(max-width:500px){
+
+    .logo{
+
+        font-size:21px;
+
+    }
+
+    .nav-links{
+
+        gap:13px;
+
+    }
+
+    .nav-links a{
+
+        font-size:13px;
+
+    }
+
+    .theme-toggle{
+
+        width:39px;
+
+        height:39px;
+
+    }
+
+    .page-header h1{
+
+        font-size:27px;
+
+    }
+
+    .page-header > div > p:last-child{
+
+        font-size:14px;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-card{
+
+        padding:20px;
+
+    }
+
+    .section-heading h2{
+
+        font-size:23px;
+
+    }
+
+}
+
+
+@media(max-width:320px){
+
+    .nav-links{
+
+        gap:9px;
+
+    }
+
+    .nav-links a{
+
+        font-size:12px;
+
+    }
+
+    .page-header h1{
+
+        font-size:24px;
+
+    }
+
+}

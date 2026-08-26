@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Notes Generator | EduMentor AI</title>
+
+    <link rel="stylesheet" href="notes.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            EduMentor AI
+        </div>
+
+        <div class="nav-controls">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html" class="active">Notes</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-header">
+
+        <h1>
+
+            🤖 AI Notes Generator
+
+        </h1>
+
+        <p>
+
+            Generate smart notes, summaries and important questions in seconds.
+
+        </p>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="notes-container">
+
+        <!-- LEFT PANEL -->
+
+        <div class="input-card">
+
+            <h2>
+
+                Generate Notes
+
+            </h2>
+
+            <label>
+
+                Subject
+
+            </label>
+
+            <input 
+id="subject"
+type="text" 
+placeholder="Example: Biology">
+            <label>
+
+                Topic
+
+            </label>
+                    <input id="topic" type="text" placeholder="Example: Cell Division">
+
+            <label>
+
+                Education Level
+
+            </label>
+
+            <select>
+
+                <option>Matric</option>
+
+                <option>Intermediate</option>
+
+                <option>BS</option>
+
+            </select>
+
+            <label>
+
+                Language
+
+            </label>
+
+            <select id="language">
+
+    <option value="English">English</option>
+
+    <option value="Urdu">Urdu</option>
+
+</select>
+
+            <button class="generate-btn" id="generateBtn">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                Generate AI Notes
+
+            </button>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+
+       <div class="output-card" id="notesContainer">
+
+            <h2>
+
+                Generated Notes
+
+            </h2>
+
+            <div class="note-section">
+
+                <h3>
+
+                    📚 Summary
+
+                </h3>
+
+                <p id="summary">Your AI generated summary will appear here.</p>
+
+            </div>
+
+            <div class="note-section">
+
+                <h3>
+
+                    📌 Key Points
+
+                </h3>
+                     <ul id="keyPoints">
+                        <li>AI points will appear here</li>
+                    </ul>
+
+            </div>
+
+            <div class="note-section">
+
+                <h3>
+
+                    ❓ Important Questions
+
+                </h3>
+
+                <ul id="questions">
+                    <li>AI questions will appear here</li>
+                </ul>
+
+            </div>
+
+            <div class="note-section">
+
+                <h3>
+
+                    💡 Revision Tips
+
+                </h3>
+<p id="tips">
+    AI revision tips will appear here.
+</p>
+
+            </div>
+
+            <!-- ACTION BUTTONS -->
+
+            <div class="action-buttons">
+
+    <button id="copyBtn">
+
+        <i class="fa-solid fa-copy"></i>
+        Copy
+
+    </button>
+
+
+    <button id="pdfBtn">
+
+        <i class="fa-solid fa-file-pdf"></i>
+        PDF
+
+    </button>
+
+
+    <button id="printBtn">
+
+        <i class="fa-solid fa-print"></i>
+        Print
+
+    </button>
+
+</div>
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            EduMentor AI
+
+        </h3>
+
+        <p>
+
+            Your AI Powered Personal Study Companion
+
+        </p>
+        <p class="development">
+        DEVELOPED BY UMAR WEB DEVELOPER <p>
+
+
+        <p>
+
+            © 2026 EduMentor AI
+
+        </p>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="notes.js"></script>
+
+</body>
+
+</html>

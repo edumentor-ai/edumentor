@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | EduMentor AI</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     NAVBAR
+========================================== -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            EduMentor AI
+        </div>
+
+        <div class="nav-controls">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+
+
+<!-- ==========================================
+     PAGE HEADER
+========================================== -->
+
+<section class="page-header">
+
+    <div>
+
+        <p class="small-title">
+            <i class="fa-solid fa-chart-line"></i>
+            Student Progress
+        </p>
+
+        <h1>
+            Your Learning Dashboard
+        </h1>
+
+        <p>
+            Track your AI quiz performance and
+            monitor your learning progress.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     STATISTICS
+========================================== -->
+
+<main class="dashboard-container">
+
+
+    <section class="stats-grid">
+
+
+        <!-- Quizzes Taken -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-clipboard-question"></i>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Quizzes Taken
+                </p>
+
+                <h2 id="quizCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Average Score -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-bullseye"></i>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Average Score
+                </p>
+
+                <h2 id="averageScore">
+                    0%
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Best Score -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-trophy"></i>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Best Score
+                </p>
+
+                <h2 id="bestScore">
+                    0%
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Topics -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Topics Practiced
+                </p>
+
+                <h2 id="topicCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         RECENT QUIZZES
+    ========================================== -->
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    Learning History
+                </p>
+
+                <h2>
+                    Recent Quiz Results
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div id="recentResults" class="results-container">
+
+            <div class="empty-state">
+
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <h3>
+                    No quiz results yet
+                </h3>
+
+                <p>
+                    Complete an AI quiz to see your
+                    progress here.
+                </p>
+
+                <a href="quiz.html" class="dashboard-btn">
+
+                    Take a Quiz
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <h3>
+        EduMentor AI
+    </h3>
+
+    <p>
+        Learn Smarter with Artificial Intelligence.
+    </p>
+    <p class="development">
+        DEVELOPED BY UMAR WEB DEVELOPER <p>
+
+
+    <p>
+        © 2026 EduMentor AI. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
