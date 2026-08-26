@@ -98,20 +98,7 @@ generateBtn.addEventListener("click", async () => {
 
         // Show Summary
         document.getElementById("summary").innerHTML = data.summary;
-       const language = document.getElementById("language").value;
-
-const notesContainer =
-    document.getElementById("notesContainer");
-
-if(language === "Urdu"){
-
-    notesContainer.classList.add("urdu-notes");
-
-}else{
-
-    notesContainer.classList.remove("urdu-notes");
-
-}
+ 
 
         // Show Key Points
         const keyPoints = document.getElementById("keyPoints");
