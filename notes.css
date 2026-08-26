@@ -703,3 +703,55 @@ body.dark .hamburger-btn {
         font-size: 22px;
     }
 }
+/* ==========================================
+   URDU NOTES FONT
+========================================== */
+
+.urdu-notes{
+
+    font-family:'Noto Nastaliq Urdu', serif;
+
+    direction:rtl;
+
+    text-align:right;
+
+    line-height:2.2;
+
+}
+
+
+/* Urdu headings */
+
+.urdu-notes h2,
+.urdu-notes h3{
+
+    font-family:'Noto Nastaliq Urdu', serif;
+
+    direction:rtl;
+
+    text-align:right;
+
+}
+
+
+/* Urdu lists */
+
+.urdu-notes ul{
+
+    padding-right:25px;
+
+    padding-left:0;
+
+}
+
+.urdu-notes li{
+
+    font-family:'Noto Nastaliq Urdu', serif;
+
+    direction:rtl;
+
+    text-align:right;
+
+    line-height:2.2;
+
+}
