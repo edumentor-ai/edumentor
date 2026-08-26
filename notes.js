@@ -76,7 +76,7 @@ generateBtn.addEventListener("click", async () => {
         // 1. Get the language value FIRST
         const language = document.getElementById("language").value;
        const notescontainer =
-    document.getElementById("notes-container");
+    document.getElementById("notesContainer");
 
 if (language === "Urdu") {
 
