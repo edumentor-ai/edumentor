@@ -1,4 +1,4 @@
-nu/* ==========================================
+/* ==========================================
    DARK MODE & HAMBURGER MENU TOGGLE
 ========================================== */
 document.addEventListener("DOMContentLoaded", () => {
@@ -75,16 +75,16 @@ generateBtn.addEventListener("click", async () => {
     try {
         // 1. Get the language value FIRST
         const language = document.getElementById("language").value;
-       const notesContainer =
-    document.getElementById("notesContainer");
+       const notes-container =
+    document.getElementById("notes-container");
 
 if (language === "Urdu") {
 
-    notesContainer.classList.add("urdu-notes");
+    notes-container.classList.add("urdu-notes");
 
 } else {
 
-    notesContainer.classList.remove("urdu-notes");
+    notes-container.classList.remove("urdu-notes");
 
 }
 
