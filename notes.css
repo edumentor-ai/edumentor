@@ -755,3 +755,38 @@ body.dark .hamburger-btn {
     line-height:2.2;
 
 }
+/* ==========================================
+   URDU NOTES FONT
+========================================== */
+
+.urdu-notes,
+.urdu-notes p,
+.urdu-notes li,
+.urdu-notes h2,
+.urdu-notes h3 {
+
+    font-family: "Noto Nastaliq Urdu", serif;
+
+}
+
+.urdu-notes {
+
+    direction: rtl;
+    text-align: right;
+    line-height: 2.2;
+
+}
+
+.urdu-notes ul {
+
+    padding-right: 25px;
+    padding-left: 0;
+
+}
+
+.urdu-notes li {
+
+    text-align: right;
+    line-height: 2.2;
+
+}
