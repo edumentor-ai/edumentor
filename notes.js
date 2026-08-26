@@ -1,4 +1,4 @@
-/* ==========================================
+nu/* ==========================================
    DARK MODE & HAMBURGER MENU TOGGLE
 ========================================== */
 document.addEventListener("DOMContentLoaded", () => {
@@ -286,3 +286,4 @@ document.getElementById("pdfBtn").addEventListener("click", () => {
     doc.save("EduMentor-AI-Notes.pdf");
 
 });
+
