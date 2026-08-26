@@ -75,16 +75,20 @@ generateBtn.addEventListener("click", async () => {
     try {
         // 1. Get the language value FIRST
         const language = document.getElementById("language").value;
-       const notescontainer =
-    document.getElementById("notesContainer");
+      const notesContainer =
+    document.querySelector(".output-card");
 
-if (language === "Urdu") {
+if (notesContainer) {
 
-    notescontainer.classList.add("urdu-notes");
+    if (language === "Urdu") {
 
-} else {
+        notesContainer.classList.add("urdu-notes");
 
-    notescontainer.classList.remove("urdu-notes");
+    } else {
+
+        notesContainer.classList.remove("urdu-notes");
+
+    }
 
 }
 
