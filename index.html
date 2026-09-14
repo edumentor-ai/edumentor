@@ -337,6 +337,14 @@
 
 </footer>
 <script src="script.js"></script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/edumentor/sw.js')
+        .then(() => console.log('Service Worker Registered Successfully'));
+    });
+  }
+</script>
 
 </body>
 </html>
