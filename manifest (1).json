@@ -1,0 +1,34 @@
+{
+  "background_color": "#ffffff",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "EduMentor AI - Learn Smarter",
+  "orientation": "portrait",
+  "scope": "/edumentor/",
+  "short_name": "EduMentor",
+  "start_url": "/edumentor/",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "https://edumentor-ai.github.io/edumentor/favicon.svg",
+      "type": "image/svg+xml",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "/edumentor/",
+  "description": "EduMentor AI helps students generate AI-powered notes, practice quizzes, and track learning progress from one intelligent platform.",
+  "lang": "en",
+  "categories": [
+    "books",
+    "books &amp;amp; reference",
+    "education",
+    "productivity"
+  ]
+}
