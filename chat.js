@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
 
     const API_URL =
-        "https://edumentor-ai-backend.abasthan.app/chat";
+        "https://edumentor-ai-backend.abasthan.app";
 
     const MAX_FILES = 5;
     const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
