@@ -62,7 +62,7 @@ async function generateQuiz() {
     `;
 
     try {
-        const response = await fetch("https://edumentor-ai-backend.abasthan.app/generate-quiz", {
+        const response = await fetch("https://reward-scared-gecko.abasthan.app/generate-quiz", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
