@@ -94,7 +94,7 @@ if (notesContainer) {
 
         // 2. Make the fetch call
         const response = await fetch(
-            "https://edumentor-ai-backend.abasthan.app/generate-notes",
+            "https://reward-scared-gecko.abasthan.app/generate-notes",
             {
                 method: "POST",
                 headers: {
